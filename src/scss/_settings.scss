@@ -93,7 +93,6 @@ a {
   }
 }
 .btn {
-  display: inline-block;
   border: 2px solid var(--secondary);
   background-color: var(--secondary);
   border-radius: 20px;
@@ -121,3 +120,19 @@ a {
 
   &__line {}
 }
+
+.title {
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 45px;
+  text-transform: uppercase;
+  @media (max-width: 768px) {
+    font-size: 35px;
+    line-height: 40px;
+  }
+  @media (max-width: 768px) {
+    font-size: 25px;
+    line-height: 30px;
+  }
+}
+
