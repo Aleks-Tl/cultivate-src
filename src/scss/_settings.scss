@@ -8,6 +8,11 @@ html {
   box-sizing: inherit;
 }
 
+body {
+  &.active {
+    overflow: hidden;
+  }
+}
 .page {
   height: 100%;
   font-family: var(--font-family, sans-serif);
