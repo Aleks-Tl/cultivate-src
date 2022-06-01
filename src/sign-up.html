@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en" class="page">
+
+@include('partials/head.html')
+
+<body class="page__body">
+  <div class="site-container">
+    @include('partials/header.html')
+    <section class="create">
+      <div class="container">
+        <div class="create__wrap">
+          <div class="create__left">
+            <h2 class="create__title title">Create an account</h2>
+            <form action="create-form" class="create__form">
+              <label for="email">EMAIL
+                <input id="email" type="email" name="email" placeholder="Your Email Address">
+              </label>
+              <label for="name">Full Name
+                <input id="name" type="text" name="name" placeholder="Your Name">
+              </label>
+              <label for="password">Password
+                <input id="pass" type="password" name="password">
+              </label>
+              <label for="name">confirm Password
+                <input id="pass-conf" type="password" name="password-conf">
+              </label>
+              <label class="custom-checkbox">
+                <input type="checkbox" class="custom-checkbox__field">
+                <span class="custom-checkbox__content"></span>I accept the
+                <a href="#">Terms and Conditions</a>
+              </label>
+              <button class="btn-reset btn-outline create__btn">sign up</button>
+              <div class="create__link">Already have an account? <a href="#">Sign in</a></div>
+            </form>
+          </div>
+          <div class="create__right">
+            <div class="create__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vehicula laoreet
+              ex, id iaculis ante tempor bibendum. Aliquam molestie auctor lacinia. Nunc ipsum erat, gravida id odio at,
+              ullamcorper bibendum mauris. Nullam imperdiet turpis vitae tortor posuere luctus. Morbi tempor turpis ac
+              justo varius placerat.</div>
+            <div class="join__items">
+              <div class="join__item">
+                <div class="join__info">
+                  <div class="join__prices">
+                    <div class="join__month">MONTHLY</div>
+                    <div class="join__price">$12.99<br>
+                      <span>/month</span>
+                    </div>
+                  </div>
+                  <ul class="join__list">
+                    <li>Lorem ipsum dolor sit amet </li>
+                    <li>Consectetur adipiscing elit</li>
+                    <li>In facilisis laoreet quam non</li>
+                    <li>Vestibulum eget ultrices magna</li>
+                  </ul>
+                </div>
+                <a href="#" class="join__btn btn-outline btn-reset">FREE 7-Day Trial</a>
+              </div>
+
+              <div class="join__item">
+                <div class="join__info">
+                  <div class="join__prices">
+                    <div class="join__month">ANNUAL</div>
+                    <div class="join__price">$129.99<br>
+                      <span>/month</span>
+                    </div>
+                  </div>
+                  <ul class="join__list">
+                    <li>Vestibulum tellus</li>
+                    <li>Nam non risus accumsan</li>
+                    <li>Mauris dui neque, luctus eu tortor</li>
+                    <li>Proin tortor ipsum</li>
+                  </ul>
+                </div>
+                <a href="#" class="join__btn btn-outline btn-reset">FREE 7-Day Trial</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    @include('partials/footer.html')
+    <!-- @include('html/h1.html') пример include -->
+  </div>
+
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

@@ -8,6 +8,46 @@ html {
   box-sizing: inherit;
 }
 
+.all_pages{
+  position: fixed;
+  top: 20%;
+  right: 0;
+  z-index: 101;
+  &:hover{
+    ul{
+      right: 0;
+    }
+  }
+  .page_point{
+    padding: 10px 15px;
+    background: #00d2ff;
+    cursor: pointer;
+    color: white;
+  }
+  ul{
+    background: #00D2FF;
+    padding: 15px 20px;
+    position: absolute;
+    top: 55%;
+    width: 200px;
+    right: -200px;
+    transition: .4s;
+    max-height: 450px;
+    overflow-y: auto;
+    li{
+      list-style: none;
+      margin-bottom: 15px;
+      font-size: 16px;
+      a{
+        color: #fff;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+
 body {
   &.active {
     overflow: hidden;
@@ -108,7 +148,7 @@ a {
   transition: all 0.3s ease 0s;
   &:hover {
     background-color: transparent;
-    color: var(--whiteColor);
+    color: var(--primary);
   }
   @media (max-width: 1200px) {
     font-size: 15px;

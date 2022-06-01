@@ -41,6 +41,9 @@
         }
       }
       .btn {
+        &:hover {
+          color: var(--whiteColor);
+        }
         @media (max-width: 992px) {
           &:hover {
             color: var(--primary);
@@ -53,6 +56,9 @@
       &--active {
         color: var(--primary);
       }
+    }
+    &.backgroundWhite {
+      background-color: rgba(0,0,0,0.7);
     }
   }
 }
@@ -254,7 +260,8 @@
     }
    }
    &.backgroundWhite {
-    background-color: rgba(0,0,0,0.7);
+    background-color: var(--whiteColor);
+    box-shadow: 3px 3px 7px rgba(0,0,0,0.1);
   }
   @media (max-width: 992px) {
     padding-top: 15px;
@@ -1284,7 +1291,210 @@
   }
 }
 
+// PAGE SIGN UP
 
+.create {
+  padding-top: 250px;
+  padding-bottom: 160px;
+  background-color: var(--lightGray);
+  // .create__wrap
+  h2 {
+    margin: 0;
+  }
+  &__wrap {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  // .create__left
+
+  &__left {
+    flex: 0 1 50%;
+  }
+
+  // .create__title
+
+  &__title {}
+
+  // .create__form
+
+  &__form {
+    width: 545px;
+    margin-top: 55px;
+    input {
+      display: block;
+      width: 100%;
+      outline: none;
+      border: none;
+      border-bottom: 1px solid #cccccc;
+      opacity: 0.5;
+      padding: 9px 0;
+      background-color: transparent;
+      margin-bottom: 30px;
+      font-size: 16px;
+      &::placeholder {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 30px;
+      }
+    }
+    input[type="checkbox"] {
+      display: inline;
+      width: auto;
+      opacity: 1;
+      margin: 0;
+      margin-right: 5px;
+
+    }
+
+    label {
+      font-weight: 600;
+      font-size: 12px;
+      line-height: 20px;
+      text-transform: uppercase;
+    }
+    label.custom-checkbox {
+      display: flex;
+      align-items: center;
+      text-transform: none;
+      font-size: 14px;
+      line-height: 20px;
+      a {
+        color: var(--secondary);
+        display: block;
+        margin-left: 5px;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+
+  // .create__btn
+
+  &__btn {
+    display: block;
+    width: 100%;
+    margin-top: 40px;
+    margin-bottom: 30px;
+  }
+
+  // .create__link
+
+  &__link {
+    font-size: 14px;
+    line-height: 20px;
+    a {
+      color: var(--secondary);
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  // .create__right
+
+  &__right {
+    flex: 0 1 50%;
+  }
+
+  // .create__text
+
+  &__text {
+    line-height: 26px;
+  }
+
+  .join {
+
+    // .join__items
+
+    &__items {
+      flex-direction: column;
+    }
+
+    // .join__item
+
+    &__item {
+      padding-top: 40px;
+      padding-bottom: 30px;
+    }
+
+    // .join__info
+
+    &__info {}
+
+    // .join__prices
+
+    &__prices {}
+
+    // .join__month
+
+    &__month {}
+
+    // .join__price
+
+    &__price {}
+
+    // .join__list
+
+    &__list {}
+
+    // .join__btn
+
+    &__btn {
+
+    }
+  }
+
+  .custom-checkbox {
+    padding-left: 20px;
+    // .custom-checkbox__field
+
+    &__field {
+     // display: inline;
+     position: absolute;
+     -webkit-appearance: none;
+     -moz-appearance: none;
+     appearance: none;
+    }
+
+    // .custom-checkbox__content
+
+    &__content {
+      position: absolute;
+      width: 1em;
+      height: 1em;
+      opacity: 0.5;
+      border: 1px solid #CCCCCC;
+      border-radius: 2px;
+      margin-left: -20px;
+    }
+  }
+  .custom-checkbox__field:checked + .custom-checkbox__content {
+    background-color: var(--secondary);
+  }
+
+  input[type="checkbox"]:checked + span:after {
+      content: "";
+      position: absolute;
+
+  }
+
+  input[type="checkbox"]:checked + span:after {
+      left: 1px;
+      top: 2px;
+      width: 10px;
+      height: 6px;
+      border-radius: 1px;
+      border-left: 3px solid var(--whiteColor);
+      border-bottom: 3px solid var(--whiteColor);
+      -webkit-transform: rotate(-45deg);
+      -moz-transform: rotate(-45deg);
+      -o-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+      transform: rotate(-45deg);
+  }
+}
 
 
 
