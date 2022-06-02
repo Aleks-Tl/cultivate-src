@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" class="page">
+
+@include('partials/head.html')
+
+<body class="page__body">
+  <div class="site-container">
+    @include('partials/header.html')
+    <section class="signin">
+      <div class="container">
+        <div class="signin__wrap">
+          <div class="signin__item">
+            <h2 class="create__title title">SIGN IN</h2>
+            <form action="signin-form" class="signin__form">
+              <label for="email">EMAIL
+                <input id="email" type="email" name="email" placeholder="Your Email Address" required>
+              </label>
+              <label for="password">Password
+                <input id="pass" type="password" name="password">
+              </label>
+              <div class="signin__check-wrap">
+                <label class="custom-checkbox">
+                  <input type="checkbox" class="custom-checkbox__field">
+                  <span class="custom-checkbox__content"></span>Keep signed in
+                </label>
+                <a href="#" class="signin__forgott">Forgot Password?</a>
+              </div>
+              <button class="btn-reset btn-outline create__btn">sign up</button>
+              <div class="create__link">Don't have an account? <a href="#">Sign up</a></div>
+            </form>
+          </div>
+          <div class="signin__item">
+            <div class="signin__img"><img src="img/sign-in-img.jpg" alt="img"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    @include('partials/footer.html')
+    <!-- @include('html/h1.html') пример include -->
+  </div>
+
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
