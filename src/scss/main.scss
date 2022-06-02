@@ -1363,7 +1363,7 @@
 
 // PAGE SIGN UP
 
-.create, .signin {
+.create, .signin, .contact {
   padding-top: 250px;
   padding-bottom: 160px;
   background-color: var(--lightGray);
@@ -1733,7 +1733,368 @@
   }
 }
 
+// PAGE CONTACT
 
+.contact {
+  padding-top: 180px;
+  padding-bottom: 100px;
+  background-color: var(--lightGray);
+  @media (max-width: 768px) {
+    padding-top: 130px;
+    padding-bottom: 70px;
+  }
+  // .contact__wrap
+  label {
+    span {
+      color: red;
+    }
+  }
+  &__wrap {
+    flex-direction: column;
+    align-items: center;
+    max-width: 890px;
+    margin: 0 auto;
+    gap: 0;
+  }
+
+  // .contact__title
+
+  &__title {
+    text-align: center;
+  }
+
+  // .contact__subtitle
+
+  &__subtitle {
+    text-align: center;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 30px;
+    margin-top: 15px;
+  }
+
+  // .contact__form
+
+  &__form {
+    margin-top: 40px;
+  }
+
+  // .contact__select
+
+  &__select {
+    display: block;
+    width: 100%;
+    margin-bottom: 30px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #cccccc;
+    opacity: 0.5;
+    background-color: transparent;
+    padding: 9px 0;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    color: var(--primary);
+  }
+  textarea {
+    width: 100%;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #cccccc;
+    opacity: 0.5;
+    height: 100px;
+    background-color: transparent;
+    resize: none;
+    font-size: 16px;
+    &::placeholder {
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 30px;
+      color: var(--primary);
+
+    }
+  }
+  // .contact__btn
+
+  &__btn {
+    max-width: fit-content;
+    margin: 68px auto 0 auto;
+    @media (max-width: 768px) {
+      margin-top: 40px;
+    }
+  }
+}
+
+
+// PAGE TERMS
+
+.terms {
+  padding-top: 180px;
+  padding-bottom: 160px;
+  background-color: var(--lightGray);
+  @media (max-width: 1200px) {
+    padding-top: 160px;
+    padding-bottom: 100px;
+  }
+  @media (max-width: 768px) {
+    padding-top: 100px;
+    padding-bottom: 40px;
+  }
+  @media (max-width: 576px) {
+    padding-top: 80px;
+  }
+  // .terms__wrap
+
+  &__wrap {
+
+  }
+
+  // .terms__title
+
+  &__title {
+    text-align: center;
+    margin-bottom: 85px;
+    @media (max-width: 992px) {
+      margin-bottom: 40px;
+    }
+    @media (max-width: 992px) {
+      margin-bottom: 25px;
+    }
+  }
+
+  // .terms__text
+
+  &__text {
+    p {
+      line-height: 26px;
+    }
+  }
+
+  // .terms__name
+
+  &__name {
+    font-weight: 700;
+    font-size: 18px;
+    margin-top: 20px;
+  }
+}
+
+// PAGE CLASSES
+
+// Section Classes
+
+.classes {
+  padding-top: 100px;
+  padding-bottom: 150px;
+  // .classes__title
+
+  &__title {}
+
+  // .classes__filter
+
+  &__filter {}
+
+  // .classes__filtered
+
+  &__filtered {}
+
+  // .classes__wrap
+
+  &__wrap {
+    margin-bottom: 65px;
+  }
+}
+.head {
+  text-align: center;
+  background-color: var(--lightGray);
+  padding: 80px 0;
+}
+.filter {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+  // .filter__item
+
+  &__item {
+    label {
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 20px;
+      text-transform: uppercase;
+    }
+  }
+
+  // .filter__select
+
+  &__select {
+    margin-right: 60px;
+    outline: none;
+    border: none;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    color: var(--primary);
+    text-transform: uppercase;
+    cursor: pointer;
+    &:last-child {
+      margin-right: 0;
+    }
+    &:nth-child(3) {
+      width: 75px;
+    }
+  }
+}
+.filtered {
+  margin-bottom: 30px;
+  span {
+    background: #FFE2CB;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 20px;
+    text-transform: uppercase;
+    padding: 3px 10px;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    &:last-child {
+      margin-right: 0;
+    }
+    &:hover {
+      background: #eec29e;
+    }
+  }
+}
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  row-gap: 60px;
+  column-gap: 30px;
+  flex-wrap: wrap;
+  // .flex-container__item
+
+  &__item {
+    width: 430px;
+  }
+
+  // .flex-container__block
+
+  &__block {
+    position: relative;
+    width: 430px;
+    height: 300px;
+  }
+
+  // .flex-container__info
+
+  &__info {
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+    line-height: 20px;
+    color: var(--whiteColor);
+  }
+
+  // .flex-container__easy
+
+  &__easy {
+    position: absolute;
+    left: 20px;
+    bottom: 15px;
+    padding-left: 15px;
+    background-image: url('../img/status-bg.png');
+    background-repeat: no-repeat;
+    background-size: 8px 10px;
+    background-position: left 5px;
+  }
+
+  // .flex-container__time
+
+  &__time {
+    position: absolute;
+    right: 20px;
+    bottom: 15px;
+  }
+
+  // .flex-container__name
+
+  &__name {
+    margin-top: 18px;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  // .flex-container__descr
+
+  &__descr {
+    font-size: 15px;
+    line-height: 22px;
+  }
+
+  .play {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+  }
+  &__pagination {
+
+  }
+
+}
+
+.navigation {
+
+
+}
+.pagination {
+  text-align: center;
+
+}
+.nav-links {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.page-numbers {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--primary);
+  border: 2px solid var(--secondary);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  transition: all 0.3s ease 0s;
+  &:hover {
+    background-color: var(--secondary);
+  }
+}
+.current {
+  background-color: var(--secondary);
+}
+.meta-nav {
+}
+.screen-reader-text {
+}
+.dots {
+  border: none;
+
+}
 
 
 

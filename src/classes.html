@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en" class="page">
+
+@include('partials/head.html')
+
+<body class="page__body">
+  <div class="site-container">
+    @include('partials/header.html')
+
+    <section class="classes">
+      <h2 class="classes__title title head">Classes</h2>
+      <div class="container">
+        <div class="filter classes__filter">
+          <div class="filter__item">
+            <select name="duration" class="filter__select" id="select-duration">
+              <option selected>Duration</option>
+              <option value="value1">Value - 1</option>
+              <option value="value2">Value - 2</option>
+              <option value="value3">Value - 3</option>
+            </select>
+            <select name="intensity" class="filter__select" id="select-intensity">
+              <option selected>Intensity</option>
+              <option value="value1">Value - 1</option>
+              <option value="value2">Value - 2</option>
+              <option value="value3">Value - 3</option>
+            </select>
+            <select name="style" class="filter__select" id="select-style">
+              <option selected>Style</option>
+              <option value="value1">Value - 1</option>
+              <option value="value2">Value - 2</option>
+              <option value="value3">Value - 3</option>
+            </select>
+          </div>
+          <div class="filter__item">
+            <label for="select-sort"><span>Sort By:</span>
+              <select name="sort" class="filter__select" id="select-sort">
+                <option value="value1" selected>Newest</option>
+                <option value="value2">Value - 2</option>
+                <option value="value3">Value - 3</option>
+                <option value="value4">Value - 4</option>
+              </select>
+            </label>
+          </div>
+        </div>
+        <div class="filtered classes__filtered">
+          <span>0-50 mins &times;</span>
+          <span>Easy Going &times;</span>
+          <span>Yogalates &times;</span>
+        </div>
+        <div class="classes__wrap flex-container">
+          <div class="flex-container__item">
+            <div class="flex-container__block">
+              <a data-fancybox="video-gallery" href="https://www.youtube.com/watch?v=nvFm30ZAZRY">
+                <img src="img/classes-img-1.jpg" width="430" height="300">
+                <img src="img/play.svg" alt="play" class="play">
+                <div class="flex-container__info">
+                  <div class="flex-container__easy">EASY GOING</div>
+                  <div class="flex-container__time">2:15</div>
+                </div>
+              </a>
+            </div>
+            <div class="flex-container__name">Lorem ipsum dolor</div>
+            <div class="flex-container__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in feugiat
+              nisl, porta pellentesque ante. Vestibulum ut massa tempus, consequat lectus.</div>
+          </div>
+          <div class="flex-container__item">
+            <div class="flex-container__block">
+              <a data-fancybox="video-gallery" href="https://www.youtube.com/watch?v=nvFm30ZAZRY">
+                <img src="img/classes-img-2.jpg" width="430" height="300">
+                <img src="img/play.svg" alt="play" class="play">
+                <div class="flex-container__info">
+                  <div class="flex-container__easy">EASY GOING</div>
+                  <div class="flex-container__time">2:15</div>
+                </div>
+              </a>
+            </div>
+            <div class="flex-container__name">Proin justo ipsum</div>
+            <div class="flex-container__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in feugiat
+              nisl, porta pellentesque ante. Vestibulum ut massa tempus, consequat lectus.</div>
+          </div>
+          <div class="flex-container__item">
+            <div class="flex-container__block">
+              <a data-fancybox="video-gallery" href="https://www.youtube.com/watch?v=nvFm30ZAZRY">
+                <img src="img/classes-img-3.jpg" width="430" height="300">
+                <img src="img/play.svg" alt="play" class="play">
+                <div class="flex-container__info">
+                  <div class="flex-container__easy">EASY GOING</div>
+                  <div class="flex-container__time">2:15</div>
+                </div>
+              </a>
+            </div>
+            <div class="flex-container__name">Nulla pellentesque</div>
+            <div class="flex-container__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in feugiat
+              nisl, porta pellentesque ante. Vestibulum ut massa tempus, consequat lectus.</div>
+          </div>
+          <div class="flex-container__item">
+            <div class="flex-container__block">
+              <a data-fancybox="video-gallery" href="https://www.youtube.com/watch?v=nvFm30ZAZRY">
+                <img src="img/classes-img-4.jpg" width="430" height="300">
+                <img src="img/play.svg" alt="play" class="play">
+                <div class="flex-container__info">
+                  <div class="flex-container__easy">EASY GOING</div>
+                  <div class="flex-container__time">2:15</div>
+                </div>
+              </a>
+            </div>
+            <div class="flex-container__name">Curabitur blandit leo</div>
+            <div class="flex-container__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in feugiat
+              nisl, porta pellentesque ante. Vestibulum ut massa tempus, consequat lectus.</div>
+          </div>
+          <div class="flex-container__item">
+            <div class="flex-container__block">
+              <a data-fancybox="video-gallery" href="https://www.youtube.com/watch?v=nvFm30ZAZRY">
+                <img src="img/classes-img-5.jpg" width="430" height="300">
+                <img src="img/play.svg" alt="play" class="play">
+                <div class="flex-container__info">
+                  <div class="flex-container__easy">EASY GOING</div>
+                  <div class="flex-container__time">2:15</div>
+                </div>
+              </a>
+            </div>
+            <div class="flex-container__name">Mauris viverra</div>
+            <div class="flex-container__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in feugiat
+              nisl, porta pellentesque ante. Vestibulum ut massa tempus, consequat lectus.</div>
+          </div>
+          <div class="flex-container__item">
+            <div class="flex-container__block">
+              <a data-fancybox="video-gallery" href="https://www.youtube.com/watch?v=nvFm30ZAZRY">
+                <img src="img/classes-img-6.jpg" width="430" height="300">
+                <img src="img/play.svg" alt="play" class="play">
+                <div class="flex-container__info">
+                  <div class="flex-container__easy">EASY GOING</div>
+                  <div class="flex-container__time">2:15</div>
+                </div>
+              </a>
+            </div>
+            <div class="flex-container__name">Pellentesque bibendum</div>
+            <div class="flex-container__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in feugiat
+              nisl, porta pellentesque ante. Vestibulum ut massa tempus, consequat lectus.</div>
+          </div>
+          <div class="flex-container__item">
+            <div class="flex-container__block">
+              <a data-fancybox="video-gallery" href="https://www.youtube.com/watch?v=nvFm30ZAZRY">
+                <img src="img/classes-img-7.jpg" width="430" height="300">
+                <img src="img/play.svg" alt="play" class="play">
+                <div class="flex-container__info">
+                  <div class="flex-container__easy">EASY GOING</div>
+                  <div class="flex-container__time">2:15</div>
+                </div>
+              </a>
+            </div>
+            <div class="flex-container__name">Phasellus libero nunc</div>
+            <div class="flex-container__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in feugiat
+              nisl, porta pellentesque ante. Vestibulum ut massa tempus, consequat lectus.</div>
+          </div>
+          <div class="flex-container__item">
+            <div class="flex-container__block">
+              <a data-fancybox="video-gallery" href="https://www.youtube.com/watch?v=nvFm30ZAZRY">
+                <img src="img/classes-img-8.jpg" width="430" height="300">
+                <img src="img/play.svg" alt="play" class="play">
+                <div class="flex-container__info">
+                  <div class="flex-container__easy">EASY GOING</div>
+                  <div class="flex-container__time">2:15</div>
+                </div>
+              </a>
+            </div>
+            <div class="flex-container__name">Mauris mollis</div>
+            <div class="flex-container__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in feugiat
+              nisl, porta pellentesque ante. Vestibulum ut massa tempus, consequat lectus.</div>
+          </div>
+          <div class="flex-container__item">
+            <div class="flex-container__block">
+              <a data-fancybox="video-gallery" href="https://www.youtube.com/watch?v=nvFm30ZAZRY">
+                <img src="img/classes-img-9.jpg" width="430" height="300">
+                <img src="img/play.svg" alt="play" class="play">
+                <div class="flex-container__info">
+                  <div class="flex-container__easy">EASY GOING</div>
+                  <div class="flex-container__time">2:15</div>
+                </div>
+              </a>
+            </div>
+            <div class="flex-container__name">Aenean tincidunt magna </div>
+            <div class="flex-container__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in feugiat
+              nisl, porta pellentesque ante. Vestibulum ut massa tempus, consequat lectus.</div>
+          </div>
+        </div>
+        <nav class="classes__pagination navigation pagination" role="navigation">
+          <div class="nav-links"><span class="page-numbers current"><span
+                class="meta-nav screen-reader-text"></span>1</span>
+            <a class="page-numbers" href="#"><span class="meta-nav screen-reader-text"></span>2</a>
+            <a class="page-numbers" href="#"><span class="meta-nav screen-reader-text"></span>3</a>
+            <span class="page-numbers dots">…</span>
+            <a class="page-numbers" href="#"><span class="meta-nav screen-reader-text"></span>15</a>
+          </div>
+        </nav>
+      </div>
+    </section>
+
+    @include('partials/footer.html')
+  </div>
+
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
