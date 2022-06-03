@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" class="page">
+
+@include('partials/head.html')
+
+<body class="page__body">
+  <div class="site-container">
+    @include('partials/header.html')
+
+    <section class="one-class">
+      <div class="container">
+        <div class="one-class__wrap">
+          <div class="one-class__block">
+            <a data-fancybox="video-gallery" href="https://www.youtube.com/watch?v=nvFm30ZAZRY">
+              <img src="img/one-class-img.jpg">
+              <img src="img/play.svg" alt="play" class="play">
+            </a>
+          </div>
+          <div class="one-class__info">
+            <div class="one-class__item">
+              <div class="one-class__wrapper">
+                <div class="one-class__img"><img src="img/one-class-img-1.svg" alt="img"></div>
+                <div class="one-class__timing">
+                  <div class="one-class__name">DURATION</div>
+                  <div class="one-class__time">15:05</div>
+                </div>
+              </div>
+            </div>
+            <div class="one-class__item">
+              <div class="one-class__wrapper">
+                <div class="one-class__img"><img src="img/one-class-img-2.svg" alt="img"></div>
+                <div class="one-class__timing">
+                  <div class="one-class__name">Intensity</div>
+                  <div class="one-class__time">EASY GOING</div>
+                </div>
+              </div>
+            </div>
+            <div class="one-class__item">
+              <div class="one-class__wrapper">
+                <div class="one-class__img"><img src="img/one-class-img-3.svg" alt="img"></div>
+                <div class="one-class__timing">
+                  <div class="one-class__name">STYLE</div>
+                  <div class="one-class__time">Mandala Vinyasa</div>
+                </div>
+              </div>
+            </div>
+            <div class="one-class__item">
+              <div class="one-class__wrapper">
+                <div class="one-class__img"><img src="img/one-class-img-4.svg" alt="img"></div>
+                <div class="one-class__timing">
+                  <div class="one-class__name">TEACHER</div>
+                  <div class="one-class__time">Toby Bowen</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="one-class__text">Curabitur blandit leo pellentesque, consectetur sapien vitae, posuere lectus.
+            Mauris viverra, nibh eu viverra commodo, sem tortor tincidunt est, at porttitor massa magna malesuada massa.
+            Donec eu mi porttitor libero lobortis congue. Pellentesque bibendum dolor sit amet est interdum scelerisque.
+            Phasellus libero nunc, ultricies in massa et, rhoncus bibendum sem. Morbi purus dui, sagittis et orci ac,
+            luctus feugiat quam. Ut ac odio convallis lectus tincidunt condimentum vitae et metus. Orci varius natoque
+            penatibus et magnis dis parturient montes, nascetur ridiculus mus. Praesent vel consectetur mi, vitae
+            consectetur dolor. Mauris ac scelerisque sem. In facilisis eleifend quam, vitae hendrerit dui iaculis ac.
+            Curabitur elit purus, dictum et risus quis, posuere lacinia tellus. Sed ac fermentum nisi. Aliquam mollis
+            rutrum nisl, sed ultricies urna mollis ut. Praesent aliquet libero sit amet nisl mattis mollis sit amet
+            vitae metus. Aliquam pellentesque nulla orci, et finibus tellus ultrices quis.</div>
+        </div>
+      </div>
+    </section>
+
+    @include('partials/connected.html')
+
+    @include('partials/footer.html')
+
+  </div>
+
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
