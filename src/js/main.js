@@ -44,3 +44,30 @@ const swiper = new Swiper(".members__slider", {
     }
   }
 });
+
+// TABS
+
+let tabs = document.querySelector('.tabs__header'),
+  tabsItem = document.querySelectorAll('.tabs__item'),
+  tabsInfo = document.querySelectorAll('.tabs__info');
+
+tabs.addEventListener('click', fTabs);
+
+function fTabs(event) {
+  if (event.target.className == "tabs__item") {
+    //let dataTab = event.target.getAttribute('data-tab');
+    let currentDataTab = event.target.dataset.tab;
+    //console.log(currentDataTab);
+    for (let i = 0; i < tabsItem.length; i++) {
+      tabsItem[i].classList.remove('active');
+    }
+    event.target.classList.add('active');
+    for (let i = 0; i < tabsInfo.length; i++) {
+      if (currentDataTab == i) {
+        tabsInfo[i].classList.add('active');
+      } else {
+        tabsInfo[i].classList.remove('active');
+      }
+    }
+  }
+}
