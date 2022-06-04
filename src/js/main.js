@@ -45,29 +45,38 @@ const swiper = new Swiper(".members__slider", {
   }
 });
 
-// TABS
+// FILTER CONTENT PAGE INDIVIDUAL PRACTICE PLAN
 
-let tabs = document.querySelector('.tabs__header'),
-  tabsItem = document.querySelectorAll('.tabs__item'),
-  tabsInfo = document.querySelectorAll('.tabs__info');
-
-tabs.addEventListener('click', fTabs);
-
-function fTabs(event) {
-  if (event.target.className == "tabs__item") {
-    //let dataTab = event.target.getAttribute('data-tab');
-    let currentDataTab = event.target.dataset.tab;
-    //console.log(currentDataTab);
-    for (let i = 0; i < tabsItem.length; i++) {
-      tabsItem[i].classList.remove('active');
+const filterBox = document.querySelectorAll('.box');
+document.querySelector('.nav-filter').addEventListener('click', event => {
+  if (event.target.tagName !== 'LI') return false;
+  let filterClass = event.target.dataset['f'];
+  filterBox.forEach(elem => {
+    elem.classList.remove('hide');
+    if (!elem.classList.contains(filterClass) && filterClass !== 'all') {
+      elem.classList.add('hide')
     }
-    event.target.classList.add('active');
-    for (let i = 0; i < tabsInfo.length; i++) {
-      if (currentDataTab == i) {
-        tabsInfo[i].classList.add('active');
-      } else {
-        tabsInfo[i].classList.remove('active');
-      }
+  })
+})
+
+
+// Activity class for individual practice plan
+
+const btnContainer = document.querySelector('.nav-list-filter');
+
+let items = btnContainer.querySelectorAll('li');
+
+for (var i = 0; i < items.length; i++) {
+  items[i].addEventListener("click", function (e) {
+    console.log(e.target);
+    if (!e.target.classList.contains('active')) {
+      items.forEach((elem) => {
+        elem.classList.remove('active');
+      })
+      e.target.classList.add('active');
+    } else {
     }
-  }
+  });
 }
+
+

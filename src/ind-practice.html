@@ -7,10 +7,188 @@
   <div class="site-container">
     @include('partials/header.html')
 
-    <section class="classes">
-      <h2 class="classes__title title head">Curabitur blandit leo</h2>
+    <section class="classes filter-content">
+      <h2 class="classes__title title head">Curabitur blandit leo <span><img src="img/favorite-dark.svg"
+            alt="favorit"></span> </h2>
       <div class="container">
-
+        <nav class="nav-filter">
+          <ul class="nav-list-filter">
+            <li data-f="all" class="active">ALL</li>
+            <li data-f="alizarin" class="text-alizarin alizarin">week 1</li>
+            <li data-f="wisteria" class="text-wisteria wisteria">week 2</li>
+            <li data-f="emerland" class="text-emerland emerland">week 3</li>
+            <li data-f="sunflower" class="text-sunflower sunflower">week 4</li>
+          </ul>
+        </nav>
+        <div class="block-cover">
+          <div class="box alizarin">
+            <div class="flex-container__item">
+              <div class="flex-container__block">
+                <a data-fancybox="video-gallery" href="https://www.youtube.com/watch?v=nvFm30ZAZRY">
+                  <img src="img/classes-img-1.jpg" width="430" height="300">
+                  <img src="img/play.svg" alt="play" class="play">
+                  <div class="flex-container__info">
+                    <div class="flex-container__easy">EASY GOING</div>
+                    <div class="flex-container__time">2:15</div>
+                  </div>
+                </a>
+              </div>
+              <div class="flex-container__name">Day 1: Lorem ipsum dolor</div>
+              <div class="flex-container__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in
+                feugiat
+                nisl, porta pellentesque ante. Vestibulum ut massa tempus, consequat lectus.</div>
+            </div>
+          </div>
+          <div class="box sunflower">
+            <div class="flex-container__item">
+              <div class="flex-container__block">
+                <a data-fancybox="video-gallery" href="https://www.youtube.com/watch?v=nvFm30ZAZRY">
+                  <img src="img/classes-img-2.jpg" width="430" height="300">
+                  <img src="img/play.svg" alt="play" class="play">
+                  <div class="flex-container__info">
+                    <div class="flex-container__easy">EASY GOING</div>
+                    <div class="flex-container__time">2:15</div>
+                  </div>
+                </a>
+              </div>
+              <div class="flex-container__name">Day 1: Proin justo ipsum</div>
+              <div class="flex-container__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in
+                feugiat
+                nisl, porta pellentesque ante. Vestibulum ut massa tempus, consequat lectus.</div>
+            </div>
+          </div>
+          <div class="box emerland">
+            <div class="flex-container__item">
+              <div class="flex-container__block">
+                <a data-fancybox="video-gallery" href="https://www.youtube.com/watch?v=nvFm30ZAZRY">
+                  <img src="img/classes-img-3.jpg" width="430" height="300">
+                  <img src="img/play.svg" alt="play" class="play">
+                  <div class="flex-container__info">
+                    <div class="flex-container__easy">EASY GOING</div>
+                    <div class="flex-container__time">2:15</div>
+                  </div>
+                </a>
+              </div>
+              <div class="flex-container__name">Day 1: Nulla pellentesque</div>
+              <div class="flex-container__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in
+                feugiat
+                nisl, porta pellentesque ante. Vestibulum ut massa tempus, consequat lectus.</div>
+            </div>
+          </div>
+        </div>
+        <div class="block-cover">
+          <div class="box wisteria">
+            <div class="flex-container__item">
+              <div class="flex-container__block">
+                <a data-fancybox="video-gallery" href="https://www.youtube.com/watch?v=nvFm30ZAZRY">
+                  <img src="img/classes-img-4.jpg" width="430" height="300">
+                  <img src="img/play.svg" alt="play" class="play">
+                  <div class="flex-container__info">
+                    <div class="flex-container__easy">EASY GOING</div>
+                    <div class="flex-container__time">2:15</div>
+                  </div>
+                </a>
+              </div>
+              <div class="flex-container__name">Day 2: Curabitur blandit leo</div>
+              <div class="flex-container__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in
+                feugiat
+                nisl, porta pellentesque ante. Vestibulum ut massa tempus, consequat lectus.</div>
+            </div>
+          </div>
+          <div class="box emerland">
+            <div class="flex-container__item">
+              <div class="flex-container__block">
+                <a data-fancybox="video-gallery" href="https://www.youtube.com/watch?v=nvFm30ZAZRY">
+                  <img src="img/classes-img-5.jpg" width="430" height="300">
+                  <img src="img/play.svg" alt="play" class="play">
+                  <div class="flex-container__info">
+                    <div class="flex-container__easy">EASY GOING</div>
+                    <div class="flex-container__time">2:15</div>
+                  </div>
+                </a>
+              </div>
+              <div class="flex-container__name">Day 2: Mauris viverra</div>
+              <div class="flex-container__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in
+                feugiat
+                nisl, porta pellentesque ante. Vestibulum ut massa tempus, consequat lectus.</div>
+            </div>
+          </div>
+        </div>
+        <div class="block-cover">
+          <div class="box alizarin">
+            <div class="flex-container__item">
+              <div class="flex-container__block">
+                <a data-fancybox="video-gallery" href="https://www.youtube.com/watch?v=nvFm30ZAZRY">
+                  <img src="img/classes-img-6.jpg" width="430" height="300">
+                  <img src="img/play.svg" alt="play" class="play">
+                  <div class="flex-container__info">
+                    <div class="flex-container__easy">EASY GOING</div>
+                    <div class="flex-container__time">2:15</div>
+                  </div>
+                </a>
+              </div>
+              <div class="flex-container__name">Day 3: Phasellus libero nunc</div>
+              <div class="flex-container__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in
+                feugiat
+                nisl, porta pellentesque ante. Vestibulum ut massa tempus, consequat lectus.</div>
+            </div>
+          </div>
+          <div class="box alizarin">
+            <div class="flex-container__item">
+              <div class="flex-container__block">
+                <a data-fancybox="video-gallery" href="https://www.youtube.com/watch?v=nvFm30ZAZRY">
+                  <img src="img/classes-img-7.jpg" width="430" height="300">
+                  <img src="img/play.svg" alt="play" class="play">
+                  <div class="flex-container__info">
+                    <div class="flex-container__easy">EASY GOING</div>
+                    <div class="flex-container__time">2:15</div>
+                  </div>
+                </a>
+              </div>
+              <div class="flex-container__name">Day 3: Mauris mollis </div>
+              <div class="flex-container__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in
+                feugiat
+                nisl, porta pellentesque ante. Vestibulum ut massa tempus, consequat lectus.</div>
+            </div>
+          </div>
+          <div class="box sunflower">
+            <div class="flex-container__item">
+              <div class="flex-container__block">
+                <a data-fancybox="video-gallery" href="https://www.youtube.com/watch?v=nvFm30ZAZRY">
+                  <img src="img/classes-img-3.jpg" width="430" height="300">
+                  <div class="flex-container__info">
+                    <div class="flex-container__easy">MODERATE</div>
+                    <div class="flex-container__time"><img src="img/play-sm.svg" alt="play"> 15</div>
+                  </div>
+                </a>
+              </div>
+              <div class="flex-container__name">Day3: Pellentesque bibendum</div>
+              <div class="flex-container__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in
+                feugiat
+                nisl, porta pellentesque ante. Vestibulum ut massa tempus, consequat lectus.</div>
+            </div>
+          </div>
+        </div>
+        <div class="block-cover">
+          <div class="box alizarin">
+            <div class="flex-container__item">
+              <div class="flex-container__block">
+                <a data-fancybox="video-gallery" href="https://www.youtube.com/watch?v=nvFm30ZAZRY">
+                  <img src="img/classes-img-9.jpg" width="430" height="300">
+                  <img src="img/play.svg" alt="play" class="play">
+                  <div class="flex-container__info">
+                    <div class="flex-container__easy">EASY GOING</div>
+                    <div class="flex-container__time">2:15</div>
+                  </div>
+                </a>
+              </div>
+              <div class="flex-container__name">Day 4: Aenean tincidunt magna</div>
+              <div class="flex-container__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in
+                feugiat
+                nisl, porta pellentesque ante. Vestibulum ut massa tempus, consequat lectus.</div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -18,6 +196,10 @@
 
     @include('partials/footer.html')
   </div>
+
+  <script>
+
+  </script>
 
   <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
