@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en" class="page">
+
+@include('partials/head.html')
+
+<body class="page__body">
+  <div class="site-container">
+    @include('partials/header.html')
+
+    <section class="recipes classes">
+      <h2 class="classes__title title head">Recipes</h2>
+      <div class="container">
+        <div class="filter classes__filter">
+          <div class="filter__item">
+            <select name="duration" class="filter__select" id="select-duration">
+              <option selected>Type</option>
+              <option value="value1">Value - 1</option>
+              <option value="value2">Value - 2</option>
+              <option value="value3">Value - 3</option>
+            </select>
+            <select name="intensity" class="filter__select" id="select-intensity">
+              <option selected>Dietary</option>
+              <option value="value1">Value - 1</option>
+              <option value="value2">Value - 2</option>
+              <option value="value3">Value - 3</option>
+            </select>
+            <select name="style" class="filter__select" id="select-style">
+              <option selected>Time</option>
+              <option value="value1">Value - 1</option>
+              <option value="value2">Value - 2</option>
+              <option value="value3">Value - 3</option>
+            </select>
+          </div>
+          <div class="filter__item">
+            <label for="select-sort"><span>Sort By:</span>
+              <select name="sort" class="filter__select" id="select-sort">
+                <option value="value1" selected>Newest</option>
+                <option value="value2">Value - 2</option>
+                <option value="value3">Value - 3</option>
+                <option value="value4">Value - 4</option>
+              </select>
+            </label>
+          </div>
+        </div>
+        <div class="filtered classes__filtered">
+          <span>Breakfast &times;</span>
+          <span>Vegetarian &times;</span>
+          <span>10-20 mins &times;</span>
+        </div>
+        <div class="classes__wrap flex-container">
+          <div class="flex-container__item">
+            <div class="flex-container__block">
+              <a data-fancybox="video-gallery" href="https://www.youtube.com/watch?v=nvFm30ZAZRY">
+                <img src="img/recipes-img-1.jpg" width="430" height="300">
+                <div class="flex-container__info">
+                  <div class="flex-container__easy">BREAKFAST</div>
+                </div>
+              </a>
+            </div>
+            <div class="flex-container__name">Chocolate Quinoa Porridge</div>
+            <div class="flex-container__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in feugiat
+              nisl, porta pellentesque ante. Vestibulum ut massa tempus, consequat lectus.</div>
+          </div>
+          <div class="flex-container__item">
+            <div class="flex-container__block">
+              <a data-fancybox="video-gallery" href="https://www.youtube.com/watch?v=nvFm30ZAZRY">
+                <img src="img/recipes-img-2.jpg" width="430" height="300">
+                <div class="flex-container__info">
+                  <div class="flex-container__easy">BREAKFAST</div>
+                </div>
+              </a>
+            </div>
+            <div class="flex-container__name">24 Hearty Plant-Based Bowl Meals</div>
+            <div class="flex-container__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in feugiat
+              nisl, porta pellentesque ante. Vestibulum ut massa tempus, consequat lectus.</div>
+          </div>
+          <div class="flex-container__item">
+            <div class="flex-container__block">
+              <a data-fancybox="video-gallery" href="https://www.youtube.com/watch?v=nvFm30ZAZRY">
+                <img src="img/recipes-img-3.jpg" width="430" height="300">
+                <div class="flex-container__info">
+                  <div class="flex-container__easy">BREAKFAST</div>
+                </div>
+              </a>
+            </div>
+            <div class="flex-container__name">Vegan Pasta Primavera</div>
+            <div class="flex-container__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in feugiat
+              nisl, porta pellentesque ante. Vestibulum ut massa tempus, consequat lectus.</div>
+          </div>
+          <div class="flex-container__item">
+            <div class="flex-container__block">
+              <a data-fancybox="video-gallery" href="https://www.youtube.com/watch?v=nvFm30ZAZRY">
+                <img src="img/recipes-img-4.jpg" width="430" height="300">
+                <div class="flex-container__info">
+                  <div class="flex-container__easy">BREAKFAST</div>
+                </div>
+              </a>
+            </div>
+            <div class="flex-container__name">Spicy Garlic Edamame</div>
+            <div class="flex-container__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in feugiat
+              nisl, porta pellentesque ante. Vestibulum ut massa tempus, consequat lectus.</div>
+          </div>
+          <div class="flex-container__item">
+            <div class="flex-container__block">
+              <a data-fancybox="video-gallery" href="https://www.youtube.com/watch?v=nvFm30ZAZRY">
+                <img src="img/recipes-img-5.jpg" width="430" height="300">
+                <div class="flex-container__info">
+                  <div class="flex-container__easy">BREAKFAST</div>
+                </div>
+              </a>
+            </div>
+            <div class="flex-container__name">Decadent Chocolate Overnight Oats</div>
+            <div class="flex-container__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in feugiat
+              nisl, porta pellentesque ante. Vestibulum ut massa tempus, consequat lectus.</div>
+          </div>
+          <div class="flex-container__item">
+            <div class="flex-container__block">
+              <a data-fancybox="video-gallery" href="https://www.youtube.com/watch?v=nvFm30ZAZRY">
+                <img src="img/recipes-img-6.jpg" width="430" height="300">
+                <div class="flex-container__info">
+                  <div class="flex-container__easy">BREAKFAST</div>
+                </div>
+              </a>
+            </div>
+            <div class="flex-container__name">Vegan “Eggs” Benedict</div>
+            <div class="flex-container__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in feugiat
+              nisl, porta pellentesque ante. Vestibulum ut massa tempus, consequat lectus.</div>
+          </div>
+          <div class="flex-container__item">
+            <div class="flex-container__block">
+              <a data-fancybox="video-gallery" href="https://www.youtube.com/watch?v=nvFm30ZAZRY">
+                <img src="img/recipes-img-7.jpg" width="430" height="300">
+                <div class="flex-container__info">
+                  <div class="flex-container__easy">BREAKFAST</div>
+                  <div class="flex-container__time"><img src="img/play-sm.svg" alt="play"> 15</div>
+                </div>
+              </a>
+            </div>
+            <div class="flex-container__name">Gluten-Free English Muffins</div>
+            <div class="flex-container__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in feugiat
+              nisl, porta pellentesque ante. Vestibulum ut massa tempus, consequat lectus.</div>
+          </div>
+          <div class="flex-container__item">
+            <div class="flex-container__block">
+              <a data-fancybox="video-gallery" href="https://www.youtube.com/watch?v=nvFm30ZAZRY">
+                <img src="img/recipes-img-8.jpg" width="430" height="300">
+                <div class="flex-container__info">
+                  <div class="flex-container__easy">BREAKFAST</div>
+                </div>
+              </a>
+            </div>
+            <div class="flex-container__name">Tandoori Tofu Sheet Pan Dinner</div>
+            <div class="flex-container__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in feugiat
+              nisl, porta pellentesque ante. Vestibulum ut massa tempus, consequat lectus.</div>
+          </div>
+          <div class="flex-container__item">
+            <div class="flex-container__block">
+              <a data-fancybox="video-gallery" href="https://www.youtube.com/watch?v=nvFm30ZAZRY">
+                <img src="img/recipes-img-9.jpg" width="430" height="300">
+                <div class="flex-container__info">
+                  <div class="flex-container__easy">BREAKFAST</div>
+                </div>
+              </a>
+            </div>
+            <div class="flex-container__name">Super Garlicky Tomato Soup</div>
+            <div class="flex-container__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in feugiat
+              nisl, porta pellentesque ante. Vestibulum ut massa tempus, consequat lectus.</div>
+          </div>
+
+        </div>
+        <nav class="classes__pagination navigation pagination" role="navigation">
+          <div class="nav-links"><span class="page-numbers current"><span
+                class="meta-nav screen-reader-text"></span>1</span>
+            <a class="page-numbers" href="#"><span class="meta-nav screen-reader-text"></span>2</a>
+            <a class="page-numbers" href="#"><span class="meta-nav screen-reader-text"></span>3</a>
+            <span class="page-numbers dots">…</span>
+            <a class="page-numbers" href="#"><span class="meta-nav screen-reader-text"></span>15</a>
+          </div>
+        </nav>
+      </div>
+    </section>
+
+    @include('partials/connected.html')
+
+    @include('partials/footer.html')
+  </div>
+
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

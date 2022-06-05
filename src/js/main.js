@@ -45,38 +45,5 @@ const swiper = new Swiper(".members__slider", {
   }
 });
 
-// FILTER CONTENT PAGE INDIVIDUAL PRACTICE PLAN
-
-const filterBox = document.querySelectorAll('.box');
-document.querySelector('.nav-filter').addEventListener('click', event => {
-  if (event.target.tagName !== 'LI') return false;
-  let filterClass = event.target.dataset['f'];
-  filterBox.forEach(elem => {
-    elem.classList.remove('hide');
-    if (!elem.classList.contains(filterClass) && filterClass !== 'all') {
-      elem.classList.add('hide')
-    }
-  })
-})
-
-
-// Activity class for individual practice plan
-
-const btnContainer = document.querySelector('.nav-list-filter');
-
-let items = btnContainer.querySelectorAll('li');
-
-for (var i = 0; i < items.length; i++) {
-  items[i].addEventListener("click", function (e) {
-    console.log(e.target);
-    if (!e.target.classList.contains('active')) {
-      items.forEach((elem) => {
-        elem.classList.remove('active');
-      })
-      e.target.classList.add('active');
-    } else {
-    }
-  });
-}
 
 
