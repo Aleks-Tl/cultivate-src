@@ -46,4 +46,3 @@ const swiper = new Swiper(".members__slider", {
 });
 
 
-
