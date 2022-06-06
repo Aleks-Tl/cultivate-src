@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en" class="page">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Cultivate</title>
+  <link rel="stylesheet" href="css/vendor.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body class="page__body">
+  <div class="site-container">
+    <header class="header">
+  <div class="container">
+    <div class="header__flex">
+      <a href="#" class="header__logo">
+        <img src="img/logo.svg" class="logo-dark" alt="Cultivate Logo">
+        <img src="img/logo-white.svg" class="logo-white" alt="Cultivate Logo">
+      </a>
+      <div class="header__wrap">
+        <nav class="header__nav nav-menu" data-menu>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Classes</a></li>
+            <li><a href="#">Series</a></li>
+            <li><a href="#">Recipes</a></li>
+          </ul>
+        </nav>
+        <div class="header__btns">
+          <a href="#" class="btn-outline header__btn-outline btn-reset">Sign in</a>
+          <a href="#" class="btn header__btn btn-reset">Free trial</a>
+        </div>
+      </div>
+      <button class="burger" aria-label="Open menu" data-burger>
+        <span class="burger__line"></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+    <section class="create">
+      <div class="container">
+        <div class="create__wrap">
+          <div class="create__left">
+            <h2 class="create__title title">Create an account</h2>
+            <form action="#" id="create-form" class="create__form">
+              <label for="email">EMAIL
+                <input id="email" type="email" name="email" placeholder="Your Email Address" required>
+              </label>
+              <label for="name">Full Name
+                <input id="name" type="text" name="name" placeholder="Your Name" required>
+              </label>
+              <label for="password">Password
+                <input id="pass" type="password" name="password" required>
+              </label>
+              <label for="name">confirm Password
+                <input id="pass-conf" type="password" name="password-conf" required>
+              </label>
+              <label class="custom-checkbox">
+                <input type="checkbox" class="custom-checkbox__field">
+                <span class="custom-checkbox__content"></span>I accept the
+                <a href="#">Terms and Conditions</a>
+              </label>
+              <input type="submit" class="btn-reset btn-outline create__btn" value="sign up">
+              <div class="create__link">Already have an account? <a href="#">Sign in</a></div>
+            </form>
+          </div>
+          <div class="create__right">
+            <div class="create__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vehicula laoreet
+              ex, id iaculis ante tempor bibendum. Aliquam molestie auctor lacinia. Nunc ipsum erat, gravida id odio at,
+              ullamcorper bibendum mauris. Nullam imperdiet turpis vitae tortor posuere luctus. Morbi tempor turpis ac
+              justo varius placerat.</div>
+            <div class="join__items">
+              <div class="join__item">
+                <div class="join__info">
+                  <div class="join__prices">
+                    <div class="join__month">MONTHLY</div>
+                    <div class="join__price">$12.99<br>
+                      <span>/month</span>
+                    </div>
+                  </div>
+                  <ul class="join__list">
+                    <li>Lorem ipsum dolor sit amet </li>
+                    <li>Consectetur adipiscing elit</li>
+                    <li>In facilisis laoreet quam non</li>
+                    <li>Vestibulum eget ultrices magna</li>
+                  </ul>
+                </div>
+                <a href="#" class="join__btn btn-outline btn-reset">FREE 7-Day Trial</a>
+              </div>
+
+              <div class="join__item">
+                <div class="join__info">
+                  <div class="join__prices">
+                    <div class="join__month">ANNUAL</div>
+                    <div class="join__price">$129.99<br>
+                      <span>/month</span>
+                    </div>
+                  </div>
+                  <ul class="join__list">
+                    <li>Vestibulum tellus</li>
+                    <li>Nam non risus accumsan</li>
+                    <li>Mauris dui neque, luctus eu tortor</li>
+                    <li>Proin tortor ipsum</li>
+                  </ul>
+                </div>
+                <a href="#" class="join__btn btn-outline btn-reset">FREE 7-Day Trial</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+  <div class="container">
+    <div class="footer__wrap">
+      <div class="footer__top">
+        <a href="#" class="logo-footer"><img src="img/logo-footer.svg" alt="Logo Footer"></a>
+        <ul class="footer__menu">
+          <li class="footer__item"><a href="#" class="footer__link">Home</a></li>
+          <li class="footer__item"><a href="#" class="footer__link">Classes</a></li>
+          <li class="footer__item"><a href="#" class="footer__link">Series</a></li>
+          <li class="footer__item"><a href="#" class="footer__link">Recipes</a></li>
+          <li class="footer__item"><a href="#" class="footer__link">Contact</a></li>
+        </ul>
+        <ul class="footer-social">
+          <li class="footer-social__item"><a href="#" target="_blank" class="footer-social__link social__link--fb"
+              aria-label="Facebook"><img src="../img/facebook-footer.svg" alt="Facebook"></a></li>
+          <li class="footer-social__item"><a href="#" target="_blank" class="footer-social__link social__link--tw"
+              aria-label="Twitter"><img src="../img/twitter-footer.svg" alt="Twitter"></a></li>
+          <li class="footer-social__item"><a href="#" target="_blank" class="footer-social__link social__link--in"
+              aria-label="Instagram"><img src="../img/instagram-footer.svg" alt="Instagram"></a></li>
+        </ul>
+      </div>
+      <div class="footer__bottom">
+        <div class="footer__copy">
+          <p>© <span class="year"></span>
+            <script>
+              let today = new Date();
+              let year = today.getFullYear();
+              document.querySelector('.year').innerHTML = year;
+            </script> Cultivate. All Rights Reserved. Designed by <a href="#" target="_blank">Webcapitan</a>.
+          </p>
+        </div>
+        <div class="footer__links">
+          <a href="#" target="_blank">Privacy Policy</a>
+          <a href="#" target="_blank">Terms of Use</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="all_pages">
+    <div class="page_point">Pages</div>
+    <ul class="page_list">
+      <li><a href="index.html">Index</a></li>
+      <li><a href="index2.html">Index — 2</a></li>
+      <li><a href="sign-up.html">Sign Up</a></li>
+      <li><a href="sign-in.html">Sign In</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="terms.html">Terms</a></li>
+      <li><a href="classes.html">Classes</a></li>
+      <li><a href="one-class.html">One Class</a></li>
+      <li><a href="one-class-locked.html">One Class Locked</a></li>
+      <li><a href="series.html">Series</a></li>
+      <li><a href="series-ind.html">Series-Ind</a></li>
+      <li><a href="ind-practice.html">Individual Practice</a></li>
+      <li><a href="recipes.html">Recipes</a></li>
+      <li><a href="recipes-ind.html">Recipes Individual</a></li>
+      <li><a href="404.html">404 Not found</a></li>
+      <li><a href="profile.html">Profile</a></li>
+    </ul>
+  </div>
+</footer>
+
+  </div>
+
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
