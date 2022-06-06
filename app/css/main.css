@@ -4149,6 +4149,13 @@ a {
     align-items: center;
   }
 }
+@media (max-width: 576px) {
+  .profile__wrap {
+    -webkit-box-align: inherit;
+    -ms-flex-align: inherit;
+    align-items: inherit;
+  }
+}
 .profile__left {
   width: 300px;
   padding-top: 45px;
