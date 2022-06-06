@@ -22,7 +22,7 @@
                 <div class="classes__wrap flex-container">
                   <div class="flex-container__item">
                     <div class="flex-container__block">
-                      <a data-fancybox="video-gallery" href="https://www.youtube.com/watch?v=nvFm30ZAZRY">
+                      <a href="#">
                         <img src="img/classes-img-1.jpg" width="430" height="300">
                         <img src="img/play.svg" alt="play" class="play">
                         <div class="flex-container__info">
@@ -38,7 +38,7 @@
                   </div>
                   <div class="flex-container__item">
                     <div class="flex-container__block">
-                      <a data-fancybox="video-gallery" href="https://www.youtube.com/watch?v=nvFm30ZAZRY">
+                      <a href="#">
                         <img src="img/classes-img-2.jpg" width="430" height="300">
                         <img src="img/play.svg" alt="play" class="play">
                         <div class="flex-container__info">
@@ -54,7 +54,7 @@
                   </div>
                   <div class="flex-container__item">
                     <div class="flex-container__block">
-                      <a data-fancybox="video-gallery" href="https://www.youtube.com/watch?v=nvFm30ZAZRY">
+                      <a href="#">
                         <img src="img/classes-img-3.jpg" width="430" height="300">
                         <img src="img/play.svg" alt="play" class="play">
                         <div class="flex-container__info">
@@ -72,7 +72,7 @@
                 <div class="classes__wrap flex-container">
                   <div class="flex-container__item">
                     <div class="flex-container__block">
-                      <a data-fancybox="video-gallery" href="https://www.youtube.com/watch?v=nvFm30ZAZRY">
+                      <a href="#">
                         <img src="img/classes-img-4.jpg" width="430" height="300">
                         <img src="img/play.svg" alt="play" class="play">
                         <div class="flex-container__info">
@@ -88,7 +88,7 @@
                   </div>
                   <div class="flex-container__item">
                     <div class="flex-container__block">
-                      <a data-fancybox="video-gallery" href="https://www.youtube.com/watch?v=nvFm30ZAZRY">
+                      <a href="#">
                         <img src="img/classes-img-5.jpg" width="430" height="300">
                         <img src="img/play.svg" alt="play" class="play">
                         <div class="flex-container__info">
@@ -107,7 +107,7 @@
                 <div class="classes__wrap flex-container">
                   <div class="flex-container__item">
                     <div class="flex-container__block">
-                      <a data-fancybox="video-gallery" href="https://www.youtube.com/watch?v=nvFm30ZAZRY">
+                      <a href="#">
                         <img src="img/classes-img-6.jpg" width="430" height="300">
                         <img src="img/play.svg" alt="play" class="play">
                         <div class="flex-container__info">
@@ -123,7 +123,7 @@
                   </div>
                   <div class="flex-container__item">
                     <div class="flex-container__block">
-                      <a data-fancybox="video-gallery" href="https://www.youtube.com/watch?v=nvFm30ZAZRY">
+                      <a href="#">
                         <img src="img/classes-img-7.jpg" width="430" height="300">
                         <img src="img/play.svg" alt="play" class="play">
                         <div class="flex-container__info">
@@ -206,7 +206,10 @@
                   <div class="profile__left">
                     <div class="profile__img">
                       <img src="img/avatar-big.png" alt="Avatar">
-                      <img src="img/edit.svg" alt="Edit Profile">
+                      <!-- <img src="img/edit.svg" alt="Edit Profile"> -->
+                      <label for="edit">
+                        <input type="file" class="edit" id="edit">
+                      </label>
                     </div>
                     <div class="profile__name">Christine McDonough</div>
                     <div class="profile__plan">pricing plan</div>
@@ -215,16 +218,16 @@
                       <span>/month</span>
                     </div>
                     <div class="profile__btn btn-outline btn-reset">change plan</div>
-                    <div class="profile__cancel">cancel my membership</div>
+                    <a href="" class="profile__cancel">cancel my membership</a>
                   </div>
                   <div class="profile__right">
                     <form action="profile" class="profile__form">
                       <div class="profile__names">personal info</div>
                       <label for="name">Full Name
-                        <input id="name" type="text" name="name" placeholder="Christine McDonough" required>
+                        <input id="name" type="text" name="name" value="" required>
                       </label>
                       <label for="email">EMAIL
-                        <input id="email" type="email" name="email" placeholder="Christine@gmail.com" required>
+                        <input id="email" type="email" name="email" value="" required>
                       </label>
                       <div class="profile__pass">
                         <label for="password">new Password
@@ -236,11 +239,11 @@
                       </div>
                       <div class="profile__names">billing information</div>
                       <label for="cc-number-input">card number
-                        <input type="text" maxlength="19" class="cc-number-input" placeholder="**** **** **** 4114">
+                        <input type="text" maxlength="19" class="cc-number-input" value="">
                       </label>
                       <div class="profile__wrapper">
                         <label for="cc-expiry-input">expiration date
-                          <input type="text" maxlength="5" class="cc-expiry-input" placeholder="10 / 25">
+                          <input type="text" maxlength="5" class="cc-expiry-input" value="">
                         </label>
                         <label for="cc-cvc-input">Security code
                           <input type="text" maxlength="3" class="cc-cvc-input">
