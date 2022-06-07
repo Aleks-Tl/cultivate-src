@@ -2988,75 +2988,44 @@
 .recipes-ind {
   //position: relative;
   padding-top: 100px;
+  //padding-bottom: 30px;
   background-color: var(--lightGray);
-  height: 640px;
-  overflow: hidden;
-  @media (max-width: 992px) {
-    height: 540px;
-  }
-  @media (max-width: 768px) {
-    height: auto;
-    padding-bottom: 50px;
-  }
+
   // .recipes-ind__wrap
 
   &__wrap {
     display: flex;
+    > img {
+      margin-left: -285px;
+      @media (max-width: 1350px) {
+        margin-left: -15px;
+        height: auto;
+        max-width: 50%;
+      }
+      @media (max-width: 768px) {
+        display: none;
+      }
+    }
   }
 
   // .recipes-ind__img
 
-  &__img {
-    flex: 0 1 50%;
-    img {
-      //position: absolute;
-      //top: 100px;
-      //left: 0;
-      //height: 540px;
-      //max-width: 50%;
-    }
-    @media (max-width: 1400px) {
-      flex: 0 1 40%;
-      img {
-        max-width: 40%;
-      }
-    }
-    @media (max-width: 1200px) {
-      flex: 0 1 30%;
-      img {
-        max-width: 30%;
-      }
-    }
-    @media (max-width: 992px) {
-      flex: 0 1 20%;
-      img {
-        max-width: 20%;
-      }
-    }
-    @media (max-width: 768px) {
-      display: none;
-    }
-  }
 
   // .recipes-ind__item
 
   &__item {
+
     padding: 60px;
-    flex: 0 1 50%;
-    @media (max-width: 1400px) {
-      flex: 0 1 60%;
+    @media (max-width: 1350px) {
+      padding: 20px;
     }
-    @media (max-width: 1200px) {
-      flex: 0 1 70%;
-    }
-    @media (max-width: 992px) {
-      flex: 0 1 80%;
-      padding: 15px;
-    }
-    @media (max-width: 768px) {
-      flex: 0 1 100%;
+    @media (max-width: 576px) {
       padding: 0;
+      padding-bottom: 20px;
     }
+
+    //transform: translateX(-285px);
+
   }
 
   // .recipes-ind__filter
@@ -3089,6 +3058,7 @@
         height: 20px;
       }
     }
+
   }
 
   // .recipes-ind__cooking
@@ -3108,12 +3078,18 @@
 
   // .recipes-ind__calories
 
-  &__calories {}
+  &__calories {
+
+  }
 
   .cooking {
     display: flex;
     align-items: center;
     column-gap: 25px;
+    row-gap: 10px;
+    @media (max-width: 1400px) {
+      flex-wrap: wrap;
+    }
     @media (max-width: 576px) {
       flex-direction: column;
       align-items: flex-start
@@ -3129,7 +3105,7 @@
       line-height: 20px;
       span {
         font-weight: 600;
-        margin-left: 5px;
+        //margin-left: 5px;
       }
       &:first-child {
         p {
@@ -3143,8 +3119,9 @@
         margin: 0;
         padding: 0;
       }
+
       @media (max-width: 576px) {
-        margin-bottom: 15px;
+        //margin-bottom: 15px;
         &:last-child {
           margin-bottom: 0;
         }
@@ -3152,6 +3129,7 @@
     }
 
     // .cooking__img
+
 
     &__img {}
   }
@@ -3174,6 +3152,9 @@
       line-height: 25px;
       text-transform: uppercase;
       color: var(--primary);
+      @media (max-width: 1200px) {
+        font-size: 16px;
+      }
       @media (max-width: 576px) {
         font-size: 12px;
       }
@@ -3238,6 +3219,9 @@
     display: flex;
     align-items: center;
     gap: 10px;
+    @media (max-width: 1400px) {
+      flex-wrap: wrap;
+    }
     @media (max-width: 576px) {
       flex-wrap: wrap;
     }
