@@ -269,10 +269,12 @@
                     <form action="profile" class="profile__form">
                       <div class="profile__names">personal info</div>
                       <label for="name">Full Name
-                        <input id="name" type="text" name="name" value="" required>
+                        <input id="name" type="text" name="name" value="Christine McDonough" placeholder="Your name"
+                          required>
                       </label>
                       <label for="email">EMAIL
-                        <input id="email" type="email" name="email" value="" required>
+                        <input id="email" type="email" name="email" value="Christine@gmail.com" placeholder="Your email"
+                          required>
                       </label>
                       <div class="profile__pass">
                         <label for="password">new Password
@@ -284,14 +286,16 @@
                       </div>
                       <div class="profile__names">billing information</div>
                       <label for="cc-number-input">card number
-                        <input type="text" maxlength="19" class="cc-number-input" id="cc-number-input" value="">
+                        <input type="text" maxlength="19" class="cc-number-input" id="cc-number-input"
+                          value="**** **** **** 4114" placeholder="**** **** **** 4114">
                       </label>
                       <div class="profile__wrapper">
                         <label for="cc-expiry-input">expiration date
-                          <input type="text" maxlength="5" class="cc-expiry-input" id="cc-expiry-input" value="">
+                          <input type="text" maxlength="5" class="cc-expiry-input" id="cc-expiry-input" value="10 / 25"
+                            placeholder="10 / 25">
                         </label>
                         <label for="cc-cvc-input">Security code
-                          <input type="text" maxlength="3" id="cc-cvc-input" class="cc-cvc-input">
+                          <input type="text" maxlength="3" id="cc-cvc-input" class="cc-cvc-input" placeholder="***">
                         </label>
                         <label for=""></label>
                       </div>
@@ -522,6 +526,15 @@
 
     ccExpiryInput.addEventListener('keydown', ccExpiryInputKeyDownHandler);
     ccExpiryInput.addEventListener('input', ccExpiryInputInputHandler);
+    // Open Submenu
+    let userName = document.querySelector('.header-profile__profile'),
+      submenu = document.querySelector('.header-profile__list');
+
+    userName.addEventListener('click', () => {
+      submenu.classList.toggle('open');
+      userName.classList.toggle('open');
+    })
+
   </script>
   <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
