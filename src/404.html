@@ -39,7 +39,14 @@
           <div class="footer__wrap">
             <div class="footer__bottom">
               <div class="footer__copy">
-                <p>© 2022 Cultivate. All Rights Reserved. Designed by <a href="#" target="_blank">Webcapitan</a>.</p>
+                <p>© <span class="year"></span>
+                  <script>
+                    let today = new Date();
+                    let year = today.getFullYear();
+                    document.querySelector('.year').innerHTML = year;
+                  </script> Cultivate. All Rights Reserved. Designed by <a href="https://webcapitan.com/"
+                    target="_blank">Webcapitan</a>.
+                </p>
               </div>
               <div class="footer__links">
                 <a href="#" target="_blank">Privacy Policy</a>
