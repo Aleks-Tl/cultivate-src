@@ -2670,12 +2670,24 @@ a {
   }
 }
 .flex-container__item {
-  width: 430px;
+  width: calc(33.3333333333% - 30px);
+}
+@media (max-width: 992px) {
+  .flex-container__item {
+    width: calc(50% - 30px);
+  }
+}
+@media (max-width: 575px) {
+  .flex-container__item {
+    width: 100%;
+    max-width: 430px;
+    margin: 0 auto;
+  }
 }
 .flex-container__block {
   position: relative;
-  width: 430px;
-  height: 300px;
+  width: 100%;
+  height: auto;
   -webkit-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
@@ -3458,14 +3470,7 @@ a {
 .filter-content .block-cover:last-child {
   margin-bottom: 0;
 }
-@media (max-width: 1380px) {
-  .filter-content .block-cover {
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-  }
-}
-@media (max-width: 919px) {
+@media (max-width: 575px) {
   .filter-content .block-cover {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
@@ -3473,20 +3478,29 @@ a {
   }
 }
 .filter-content .box {
-  width: 430px;
+  width: calc(33.3333333333% - 30px);
   float: left;
+  /* @media (max-width: 919px) {
+    margin-right: 0;
+    padding: 0 15px;
+  } */
+}
+@media (max-width: 992px) {
+  .filter-content .box {
+    width: calc(50% - 30px);
+  }
+}
+@media (max-width: 575px) {
+  .filter-content .box {
+    width: 100%;
+    max-width: 430px;
+  }
 }
 .filter-content .box:last-child {
   margin-right: 0;
 }
 .filter-content .box.hide {
   display: none;
-}
-@media (max-width: 919px) {
-  .filter-content .box {
-    margin-right: 0;
-    padding: 0 15px;
-  }
 }
 @media (max-width: 576px) {
   .filter-content .box {
@@ -3496,13 +3510,21 @@ a {
     padding: 0;
   }
 }
-@media (max-width: 460px) {
-  .filter-content .flex-container__item {
-    width: 100%;
+.filter-content .box .flex-container__item {
+  width: 100%;
+  height: auto;
+  /* @media (max-width: 992px) {
+    width: calc(100%/2 - 30px);
   }
+  @media (max-width: 575px) {
+    width: 100%;
+    max-width: 430px;
+  } */
 }
-.filter-content .flex-container__block {
+.filter-content .box .flex-container__block {
   position: relative;
+  width: 100%;
+  height: auto;
 }
 .filter-content .play {
   position: absolute;
@@ -3530,7 +3552,6 @@ a {
 }
 
 .recipes-ind {
-  position: relative;
   padding-top: 100px;
   background-color: var(--lightGray);
   height: 640px;
@@ -3556,13 +3577,6 @@ a {
   -webkit-box-flex: 0;
   -ms-flex: 0 1 50%;
   flex: 0 1 50%;
-}
-.recipes-ind__img img {
-  position: absolute;
-  top: 100px;
-  left: 0;
-  height: 540px;
-  max-width: 50%;
 }
 @media (max-width: 1400px) {
   .recipes-ind__img {
