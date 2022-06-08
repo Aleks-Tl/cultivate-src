@@ -722,7 +722,7 @@ a {
 }
 .header-profile__list {
   position: absolute;
-  top: 100%;
+  top: 110%;
   left: 0;
   background: var(--whiteColor);
   -webkit-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
@@ -731,6 +731,11 @@ a {
   text-align: center;
   border-radius: 8px;
   display: none;
+}
+@media (max-width: 576px) {
+  .header-profile__list {
+    left: -65px;
+  }
 }
 .header-profile__list > li {
   width: 100%;
@@ -747,7 +752,7 @@ a {
   border-radius: 0 0 8px 8px;
 }
 .header-profile__list > li:hover {
-  background-color: var(--lightGray);
+  background-color: #f7e3d2;
 }
 .header-profile__list > li > a {
   text-transform: uppercase;
@@ -757,9 +762,6 @@ a {
   transition: all 0.3s ease 0s;
   display: block;
   text-transform: capitalize;
-}
-.header-profile__list > li > a:hover {
-  color: var(--secondary);
 }
 .header-profile__list.open {
   display: block;

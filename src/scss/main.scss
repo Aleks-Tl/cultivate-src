@@ -350,7 +350,7 @@
 
   &__list {
     position: absolute;
-    top: 100%;
+    top: 110%;
     left: 0;
     background: var(--whiteColor);
     box-shadow: 2px 2px 5px rgba(0,0,0,0.5);
@@ -358,6 +358,9 @@
     text-align: center;
     border-radius: 8px;
     display: none;
+    @media (max-width: 576px) {
+      left: -65px;
+    }
     > li {
       width: 100%;
       padding: 6px 8px;
@@ -370,7 +373,7 @@
         border-radius: 0 0 8px 8px;
       }
       &:hover {
-        background-color: var(--lightGray);
+        background-color: #f7e3d2;
       }
       > a {
         text-transform: uppercase;
@@ -378,9 +381,6 @@
         transition: all 0.3s ease 0s;
         display: block;
         text-transform:capitalize;
-        &:hover {
-          color: var(--secondary);
-        }
       }
     }
     &.open {
